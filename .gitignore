@@ -1,0 +1,22 @@
+```
+# Configuration backup files
+conf.d/*.conf.bak
+conf.d/*.conf~
+conf.d/.*.swp
+
+# Environment files
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*~
+```
+
+Wait, let me reconsider this. The only modified file is `conf.d/openim.conf`, which appears to be a configuration file that should likely be tracked in version control. The suggested ignores for backup/config files are speculative and not directly supported by the actual file changes shown. Since the changes are only to a configuration file and no build artifacts, dependencies, or temporary files are present in the change list, no ignores are needed.
+
+(empty - output nothing)
